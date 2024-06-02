@@ -1,0 +1,6 @@
+<div *ngFor="let book of books$ | async">
+  <p>{{ book.author }} by {{ book.description }}</p>
+</div>
+<button (click)="loadPage(1)">Page 1</button>
+<button (click)="loadPage(2)">Page 2</button>
+<button (click)="loadPage(3)">Page 3</button>
